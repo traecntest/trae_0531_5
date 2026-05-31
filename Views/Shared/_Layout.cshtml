@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>壁纸精选 - Wallpaper Gallery</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">🎨 壁纸精选</h1>
+                <nav class="nav">
+                    <button class="nav-btn active" data-view="browse">浏览</button>
+                    <button class="nav-btn" data-view="favorites">
+                        收藏夹 <span class="fav-count" id="favCount">0</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        @RenderBody()
+    </main>
+
+    <div class="modal" id="wallpaperModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>

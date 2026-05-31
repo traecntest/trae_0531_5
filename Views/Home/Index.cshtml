@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="search-section">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="搜索壁纸（自然、城市、抽象、极简...）" />
+            <button id="searchBtn">搜索</button>
+        </div>
+        <div class="tags">
+            <span class="tag active" data-tag="">热门</span>
+            <span class="tag" data-tag="nature">自然</span>
+            <span class="tag" data-tag="city">城市</span>
+            <span class="tag" data-tag="abstract">抽象</span>
+            <span class="tag" data-tag="minimal">极简</span>
+            <span class="tag" data-tag="landscape">风景</span>
+            <span class="tag" data-tag="architecture">建筑</span>
+            <span class="tag" data-tag="ocean">海洋</span>
+            <span class="tag" data-tag="forest">森林</span>
+        </div>
+    </div>
+
+    <div class="browse-view" id="browseView">
+        <div class="masonry" id="wallpaperGrid"></div>
+        <div class="load-more" id="loadMore">
+            <button id="loadMoreBtn">加载更多</button>
+        </div>
+        <div class="no-results" id="noResults" style="display: none;">
+            <p>没有找到相关壁纸，请尝试其他关键词</p>
+        </div>
+    </div>
+
+    <div class="favorites-view" id="favoritesView" style="display: none;">
+        <h2>我的收藏</h2>
+        <div class="masonry" id="favoritesGrid"></div>
+        <div class="no-favorites" id="noFavorites">
+            <p>还没有收藏任何壁纸</p>
+            <p class="hint">点击图片上的 ❤️ 按钮添加收藏</p>
+        </div>
+    </div>
+</div>
